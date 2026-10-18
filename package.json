@@ -1,0 +1,28 @@
+{
+  "name": "bank-system",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "build:css": "tailwindcss -i client/src/css/main.css -o client/public/css/app.css --minify"
+  },
+  "dependencies": {
+    "argon2": "^0.40.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.5",
+    "swagger-ui-express": "^5.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.17",
+    "vite": "^8.3.4"
+  }
+}

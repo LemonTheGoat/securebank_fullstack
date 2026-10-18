@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body { height: 100%; }
+  body { @apply bg-[#f5f6f8] text-slate-800 antialiased; }
+  :focus-visible { outline: none; box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.3); border-radius: 8px; }
+}
+
+@layer components {
+  .app-container { @apply flex h-screen overflow-hidden bg-[#f5f6f8]; }
+  .sidebar { @apply w-64 bg-white border-r border-slate-200 flex-col hidden md:flex shrink-0; }
+  .main-content { @apply flex-1 overflow-y-auto p-6 md:p-8; }
+  .nav-item { @apply flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium text-slate-500 hover:text-slate-900 hover:bg-slate-50 transition-colors cursor-pointer; }
+  .nav-item.active { @apply bg-slate-100 text-slate-900 font-semibold; }
+  .app-card, .glass, .glass-strong { @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6; }
+  .glass-soft { @apply bg-slate-50 rounded-xl border border-slate-100 p-4; }
+  .stat-value { @apply text-3xl font-bold text-slate-900 tracking-tight; }
+  .app-label, .glass-label { @apply block text-xs font-medium text-slate-500 uppercase tracking-wider mb-2; }
+  .app-input, .glass-input { @apply w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:bg-white focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all; }
+  .btn-primary { @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold bg-slate-900 text-white hover:bg-slate-800 transition-all disabled:opacity-50 disabled:cursor-not-allowed; }
+  .glass-btn { @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium border border-slate-200 text-slate-700 hover:bg-slate-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed; }
+  .btn-danger { @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold bg-rose-500 text-white hover:bg-rose-600 transition-all; }
+  .app-table { @apply w-full text-left border-collapse; }
+  .app-table th { @apply text-xs font-medium text-slate-400 uppercase tracking-wider border-b border-slate-200 pb-4 pt-2 px-4; }
+  .app-table td { @apply py-4 px-4 border-b border-slate-100 text-sm; }
+  .badge { @apply inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium; }
+  .badge-success { @apply badge bg-emerald-50 text-emerald-600; }
+  .badge-warn { @apply badge bg-amber-50 text-amber-600; }
+  .badge-danger { @apply badge bg-rose-50 text-rose-600; }
+  .badge-neutral { @apply badge bg-slate-100 text-slate-600; }
+  .money { @apply font-mono tabular-nums; }
+  .money-lg { @apply money text-3xl font-bold text-slate-900 tracking-tight; }
+  .money-credit { @apply money text-emerald-500; }
+  .money-debit { @apply money text-slate-900; }
+}
+
+@keyframes float-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } } 
+.animate-float-up { animation: float-up .35s cubic-bezier(0.16, 1, 0.3, 1) backwards; }
+.app-card { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.app-card:hover { transform: translateY(-4px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01); }
