@@ -1,6 +1,6 @@
 # 🏦 SecureBank - Modern Full-Stack Banking System
 
-SecureBank is a production-grade, full-stack banking application built with a **double-entry ledger** at its core. It features a beautiful, responsive "Plutus-inspired" UI and a highly secure, RESTful backend.
+SecureBank is a production-grade, full-stack banking application built with a **double-entry ledger** at its core. It features a beautiful, responsive React-based Single Page Application (SPA) UI and a highly secure, RESTful backend.
 
 ![SecureBank Dashboard](https://img.shields.io/badge/UI-Plutus_Style-indigo)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js_|_Express-green)
@@ -33,7 +33,7 @@ SecureBank is a production-grade, full-stack banking application built with a **
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** Vanilla JavaScript (ES Modules), Tailwind CSS, Vite, canvas-confetti
+- **Frontend:** React 18, Redux Toolkit, Tailwind CSS, Vite, canvas-confetti, lucide-react
 - **Backend:** Node.js, Express.js
 - **Database:** PostgreSQL 18
 - **Security:** Argon2, JSON Web Tokens (JWT), Helmet, CORS, Express Rate Limit
