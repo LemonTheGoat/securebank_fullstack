@@ -2,7 +2,7 @@
 
 SecureBank is a production-grade, full-stack banking application built with a **double-entry ledger** at its core. It features a beautiful, responsive React-based Single Page Application (SPA) UI and a highly secure, RESTful backend.
 
-![SecureBank Dashboard](https://img.shields.io/badge/UI-Plutus_Style-indigo)
+![React + Vite](https://img.shields.io/badge/Frontend-React_|_Vite-indigo)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js_|_Express-green)
 ![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind_CSS-38bdf8)
